@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Prikaz emotikona</h1>
+        <form method="POST">
+            <div class="groupElement">
+                <label for="vreme">Izberite vreme: </label>
+                <select name="vreme" id="vreme">
+                    <option value="soncno">Sončno</option>
+                    <option value="oblacno">Oblačno</option>
+                    <option value="dezevno">Deževno</option>
+                </select>
+            </div>
+            
+            <div class="groupElement">
+                <label for="dan">Izberite dan: </label>
+                <select name="dan" id="dan">
+                    <option value="ponedeljek">Ponedeljek</option>
+                    <option value="torek">Torek</option>
+                    <option value="sreda">Sreda</option>
+                    <option value="cetrtek">Četrtek</option>
+                    <option value="petek">Petek</option>
+                </select>
+            </div>
+    
+            <div class="groupElement">
+                <label for="mudi">Ali se vam mudi?</label>
+                <select name="mudi" id="mudi">
+                    <option value="da">Da</option>
+                    <option value="ne">Ne</option>
+                </select>
+            </div>
+
+            <div class="groupElement">
+                <label for="pocutje">Kako se počutite?</label>
+                <select name="pocutje" id="pocutje">
+                    <option value="dobro">Dobro</option>
+                    <option value="slabo">Slabo</option>
+                </select>
+            </div>
+    
+            <input class="submitBtn" type="submit" value="Prikaži">
+        </form>
+        {% if show_emoji %}
+            <span style='font-size:200px;'>&#x{{ emoji }};</span>
+        {% endif %}
+    </center>
+</body>
+</html>

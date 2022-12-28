@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    color: #043e7d;
+}
+
+.formGroup {
+    display: block;
+}
+
+.groupElement {
+    margin: 1rem;
+}
+
+.groupElement>label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.groupElement>select {
+    border-radius: 5%;
+}
+
+.submitBtn {
+    background-color: #046ec4;
+    border-color: #046ec4;
+    height: 2rem;
+    border: 5px solid #046ec4;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 16px;
+    margin: 1rem;
+}
+
+.submitBtn:hover {
+    background-color: #043e7d;
+    border-color: #043e7d;
+}
+
+.submitBtn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainContainer {
+    display: inline-flex;
+}
+
+select {
+    font-size: large;
+    margin-left: 1rem;
+}
